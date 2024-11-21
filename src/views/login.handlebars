@@ -1,0 +1,14 @@
+{{#if currentUser}}
+  <script>window.location.href = '/current'</script>
+{{/if}}
+
+<h2>Iniciar sesion</h2>
+
+<form id='loginform'>
+  <input type='email' name='email' placeholder='Email' required />
+  <input type='password' name='password' placeholder='Contrasena' required />
+  <button type='submit'>Iniciar sesion</button>
+</form>
+<a href='/users/register'>Registrarse</a>
+
+<script src='/js/login.js'></script>
